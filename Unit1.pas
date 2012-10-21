@@ -76,7 +76,7 @@ begin
         start := 1;
         for i:=1 to length(str) do
         begin
-            if (str[i]=' ') or (str[i]='\t') then
+            if (str[i]=' ') or (str[i]=#9) then
             begin
                 cell := copy(str, start, i - start);
                 start := i+1;
